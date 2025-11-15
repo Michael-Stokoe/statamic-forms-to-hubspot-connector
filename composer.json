@@ -1,0 +1,38 @@
+{
+    "name": "stokoe/forms-to-hubspot-connector",
+    "autoload": {
+        "psr-4": {
+            "Stokoe\\FormsToHubspotConnector\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stokoe\\FormsToHubspotConnector\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "statamic/cms": "^5.0",
+        "stokoe/forms-to-wherever": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Forms To Hubspot Connector",
+            "description": "Forms To Hubspot Connector addon"
+        },
+        "laravel": {
+            "providers": [
+                "Stokoe\\FormsToHubspotConnector\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
