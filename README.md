@@ -2,6 +2,16 @@
 
 **Seamlessly connect your Statamic forms to HubSpot** - Automatically create and update contacts in HubSpot with advanced field mapping and comprehensive error handling.
 
+## 🔗 Related Connectors
+
+This connector is part of the **Forms To Wherever** ecosystem. Check out our other connectors:
+
+- **[Forms To Wherever](https://statamic.com/addons/stokoe/forms-to-wherever)** - Base package (required)
+- **[Forms To Mailchimp](https://statamic.com/addons/stokoe/forms-to-mailchimp-connector)** - Mailchimp email marketing
+- **[Forms To ConvertKit](https://statamic.com/addons/stokoe/forms-to-convertkit-connector)** - ConvertKit email marketing
+- **[Forms To ActiveCampaign](https://statamic.com/addons/stokoe/forms-to-activecampaign-connector)** - ActiveCampaign automation
+- **[Forms To Salesforce](https://statamic.com/addons/stokoe/forms-to-salesforce-connector)** - Salesforce CRM integration
+
 ## Features
 
 - **Automatic contact creation/updates** in HubSpot CRM
