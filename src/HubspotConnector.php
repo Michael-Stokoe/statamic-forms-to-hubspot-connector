@@ -96,7 +96,7 @@ class HubspotConnector implements ConnectorInterface
             return;
         }
 
-        $formData = $submission->data();
+        $formData = $submission->data()->toArray();
         $email = $formData[$emailField] ?? null;
 
         if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
