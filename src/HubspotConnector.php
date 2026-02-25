@@ -131,7 +131,15 @@ class HubspotConnector implements ConnectorInterface
             $hubspotProperty = $mapping['hubspot_property'] ?? '';
 
             if ($formField && $hubspotProperty && isset($formData[$formField])) {
-                $properties[$hubspotProperty] = $formData[$formField];
+                $value = $formData[$formField];
+
+                // Skip null/empty values to allow multiple conditional fields
+                // to map to the same HubSpot property (first non-empty value wins)
+                if (array_key_exists($hubspotProperty, $properties) && ($value === null || $value === '')) {
+                    continue;
+                }
+
+                $properties[$hubspotProperty] = $value;
             }
         }
 
